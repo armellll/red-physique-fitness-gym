@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Physique Fitness Gym — Antipolo</title>
+<meta name="description" content="Red Physique Fitness Gym in Antipolo. Aikibudo, Brazilian Jiu-Jitsu, Boxing, and Taekwondo. Train with us.">
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= LIGHTNING BACKGROUND (shared, fixed) ================= -->
+<div class="volt-field" aria-hidden="true">
+  <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+    <path class="bolt bolt-a" d="M120,-20 L180,220 L100,240 L260,540 L190,540 L340,900" />
+    <path class="bolt bolt-b" d="M900,-20 L820,260 L910,280 L740,620 L810,620 L680,1000" />
+  </svg>
+</div>
+
+<!-- ================= NAV ================= -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <img src="gymlogo.jpg" alt="Red Physique Fitness Gym logo" class="brand-mark">
+      <span class="brand-text">RED PHYSIQUE FITNESS GYM</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#programs">Programs</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#location">Location</a>
+      <a href="#location" class="nav-cta">Come join us!</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">START YOUR FITNESS JOURNEY</p>
+      <h1 class="hero-title">
+        <span>BUILT THROUGH</span>
+        <span class="hero-title-accent">DISCIPLINE</span>
+      </h1>
+      <p class="hero-sub">Whether you're starting your fitness journey or chasing your next milestone, discipline is what turns goals into achievements.</p>
+      <div class="hero-actions">
+        <a href="tel:+639158556542" class="btn btn-primary">CALL US NOW!</a>
+        <a href="#programs" class="btn btn-ghost">See the programs</a>
+      </div>
+      <div class="hero-strip"></div>
+    </div>
+  </section>
+
+  <!-- ================= PROGRAMS ================= -->
+  <section class="programs" id="programs">
+    <div class="section-head">
+      <p class="eyebrow">TRAIN HERE</p>
+      <h2>Pick your discipline</h2>
+      <p class="section-lede">Every program is coached hands-on inside the same gym floor. Come try a class and see which one fits.</p>
+    </div>
+
+    <div class="program-grid">
+      <article class="program-card" data-bolt="01">
+        <div class="program-top">
+          <h3>Muscle Building</h3>
+          <span class="program-tag">EVERYDAY</span>
+        </div>
+        <p>Building muscle doesn't happen overnight, but every rep brings you closer to a stronger, healthier, and more confident version of yourself.</p>
+      </article>
+      <article class="program-card" data-bolt="02">
+        <div class="program-top">
+          <h3>Cardio</h3>
+          <span class="program-tag">EVERYDAY</span>
+        </div>
+        <p>Build endurance, improve your heart health, and increase your energy with every session. Every step is an investment in a stronger, healthier you.</p>
+      </article>
+
+      <article class="program-card" data-bolt="03">
+        <div class="program-top">
+          <h3>Aikibudo</h3>
+          <span class="program-tag">Saturdays · 3:00–5:00 PM</span>
+        </div>
+        <p>A Japanese martial art built on joint locks, throws, and redirection — using an opponent's force against them instead of meeting it head-on. Classes run every Saturday afternoon.</p>
+      </article>
+
+      <article class="program-card" data-bolt="04">
+        <div class="program-top">
+          <h3>Brazilian Jiu-Jitsu</h3>
+          <span class="program-tag">Coached by Coach Mico</span>
+        </div>
+        <p>Ground control, submissions, and positional strategy taught by Coach Mico. Suited to beginners learning the fundamentals and to grapplers sharpening their game.</p>
+      </article>
+
+      <article class="program-card" data-bolt="05">
+        <div class="program-top">
+          <h3>Boxing</h3>
+          <span class="program-tag">Pad work &amp; sparring</span>
+        </div>
+        <p>Footwork, combinations, defense, and conditioning on the pads and the bag. Built for members training for fitness and for those working toward the ring.</p>
+      </article>
+
+      <article class="program-card" data-bolt="06">
+        <div class="program-top">
+          <h3>Taekwondo</h3>
+          <span class="program-tag">Kicks, forms &amp; discipline</span>
+        </div>
+        <p>Traditional striking with an emphasis on kicking technique, forms, and discipline — open to members of all ages working through the belt system.</p>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ================= GALLERY ================= -->
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow">COMMUNITY</p>
+      <h2>jOIN OUR FITNESS COMMUNITY</h2>
+      <p class="section-lede">Photos from training days at Red Physique.</p>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Populated by js/script.js from the GALLERY_IMAGES list -->
+    </div>
+  </section>
+
+  <!-- ================= LOCATION / CONTACT ================= -->
+  <section class="location" id="location">
+    <div class="location-inner">
+      <div class="location-info">
+        <p class="eyebrow">FIND US</p>
+        <h2>Train in San Isidro, Antipolo</h2>
+        <address>
+          BLK 3 LOT 17 Bagong Nayon II<br>
+          National Housing Authority Avenue<br>
+          Brgy. San Isidro, Antipolo, Rizal<br>
+          Philippines, 1870
+        </address>
+
+        <div class="contact-cards" id="contact">
+          <a class="contact-card" href="tel:+639158556542">
+            <span class="contact-label">Call or text</span>
+            <span class="contact-value">0915 855 6542</span>
+          </a>
+          <a class="contact-card" href="https://www.bing.com/maps/default.aspx?v=2&amp;pc=FACEBK&amp;mid=8100&amp;where1=BLK%203%20LOT%2017%20BAGONG%20NAYON%20II%2C%20NATIONAL%20HOUSING%20AUTHORITY%20AVENUE%2C%20BRGY.%20SAN%20ISIDRO%2C%20Antipolo%2C%20Philippines%2C%201870&amp;FORM=FBKPL1&amp;mkt=en-US" target="_blank" rel="noopener">
+            <span class="contact-label">Get directions</span>
+            <span class="contact-value">Open in Maps →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="location-map">
+        <iframe
+          title="Red Physique Fitness Gym map"
+          src="https://www.google.com/maps?q=BLK+3+LOT+17+Bagong+Nayon+II,+National+Housing+Authority+Avenue,+Brgy.+San+Isidro,+Antipolo,+Rizal,+1870&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="gymlogo.jpg" alt="Red Physique Fitness Gym logo" class="footer-logo">
+      <p>Red Physique Fitness Gym<br>Brgy. San Isidro, Antipolo</p>
+    </div>
+    <div class="footer-links">
+      <a href="#programs">Programs</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#location">Location</a>
+    </div>
+    <div class="footer-contact" id="phoneNum">
+      <a href="tel:+639158556542">0915 855 6542</a>
+      <span id="footerYear"></span>
+      <p>Demo Website for Red Fitness Physique Gym</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
