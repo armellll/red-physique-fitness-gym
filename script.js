@@ -24,6 +24,7 @@ function buildGallery(){
     grid.appendChild(item);
   });
 
+
   const remaining = Math.max(0, MIN_GALLERY_SLOTS - GALLERY_IMAGES.length);
   for (let i = 0; i < remaining; i++){
     const slot = document.createElement("div");
@@ -31,6 +32,35 @@ function buildGallery(){
     slot.textContent = "Photo coming soon";
     grid.appendChild(slot);
   }
+}
+
+  function setupLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  document.querySelectorAll(".gallery-item img").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add("show");
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.classList.remove("show");
+  });
+
+  lightbox.addEventListener("click", e => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("show");
+    }
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      lightbox.classList.remove("show");
+    }
+  });
 }
 
 function setupNavToggle(){
@@ -58,6 +88,7 @@ function setFooterYear(){
 
 document.addEventListener("DOMContentLoaded", () => {
   buildGallery();
+  setupLightbox();
   setupNavToggle();
   setFooterYear();
 });
