@@ -1,8 +1,8 @@
 
 const GALLERY_IMAGES = [
-     { file: "placeholder1.jpg"},
-     { file: "placeholder2.jpg"}, 
-     { file: "placeholder3.jpg"}
+     { file: "wally.jpg"},
+     { file: "cafe3.jpg"}, 
+     { file: "download (3).jpg"}
 ];
 
 const MIN_GALLERY_SLOTS = 3; // keeps the grid from looking empty before photos are added
